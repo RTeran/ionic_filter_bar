@@ -1,0 +1,20 @@
+{
+  "name": "ionic_filter_bar",
+  "version": "1.1.1",
+  "description": "A filter directive UI for Ionic apps that animates over the header bar",
+  "homepage": "http://github.com/rteran/ionic_filter_bar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rteran/ionic_filter_bar.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rteran/ionic_filter_bar/issues"
+  },
+  "homepage": "https://github.com/rteran/ionic_filter_bar",
+  "_id": "ionic_filter_bar@1.0.0",
+  "_shasum": "03b8d8ffbb5e930632673480ec9498c8c835cdd9",
+  "_from": "ionic_filter_bar@1.0.0",
+  "_npmVersion": "2.0.2",
+  "_nodeVersion": "0.10.26"
+}
