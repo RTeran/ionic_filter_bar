@@ -17,7 +17,7 @@ angular.module('ionic_filter_bar', ['ionic']);
               '<div class="bar bar-header bar-{{::config.theme}} item-input-inset">' +
                 '<button class="filter-bar-cancel button button-icon icon {{::config.back}}"></button>' +
                 '<label class="item-input-wrapper">' +
-                  '<input type="search" class="filter-bar-search" ng-model="data.filterText" placeholder="{{::config.placeholder}}" />' +
+                  '<input type="search" class="filter-bar-search" ng-model="data.filterText" placeholder="{{\'actions.search\' | translate}}" />' +
                   '<button class="filter-bar-clear button button-icon icon" ng-class="getClearButtonClass()"></button>' +
                 '</label>' +
               '</div>' +
@@ -28,10 +28,10 @@ angular.module('ionic_filter_bar', ['ionic']);
               '<div class="bar bar-header bar-{{::config.theme}} item-input-inset">' +
                 '<label class="item-input-wrapper">' +
                   '<i class="icon {{::config.search}} placeholder-icon"></i>' +
-                  '<input type="search" class="filter-bar-search" ng-model="data.filterText" placeholder="{{::config.placeholder}}"/>' +
+                  '<input type="search" class="filter-bar-search" ng-model="data.filterText" placeholder="{{\'actions.search\' | translate}}"/>' +
                   '<button class="filter-bar-clear button button-icon icon" ng-class="getClearButtonClass()"></button>' +
                 '</label>' +
-                '<button class="filter-bar-cancel button button-clear" ng-bind-html="::cancelText"></button>' +
+                '<button class="filter-bar-cancel button button-clear" ng-bind-html="\'actions.cancel\' | translate"></button>' +
               '</div>' +
             '</div>';
         }
@@ -208,8 +208,7 @@ angular.module('ionic_filter_bar', ['ionic']);
         favorite: 'ion-ios-star',
         search: 'ion-ios-search-strong',
         backdrop: true,
-        transition: 'vertical',
-        placeholder: 'Search'
+        transition: 'vertical'
       });
 
       // iOS (it is the default already)
@@ -432,7 +431,6 @@ angular.module('ionic_filter_bar', ['ionic']);
             comparator: null,
             debounce: true,
             delay: 500,
-            cancelText: 'Cancel',
             cancelOnStateChange: true,
             container: $body,
             favoritesTitle: 'Favorite Searches',
