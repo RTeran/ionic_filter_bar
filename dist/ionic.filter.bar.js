@@ -575,7 +575,10 @@ angular.module('ionic_filter_bar', ['ionic']);
             //animate the filterBar out, hide keyboard and backdrop
             ionic.requestAnimationFrame(function () {
               filterWrapperEl.removeClass('filter-bar-in');
-              hideKeyboard();
+              $timeout(function () {
+                hideKeyboard();
+              }, 500);
+              
               scope.hideBackdrop();
 
               //Wait before cleaning up so element isn't removed before filter bar animates out
@@ -622,7 +625,6 @@ angular.module('ionic_filter_bar', ['ionic']);
 
               $timeout(function () {
                 filterWrapperEl.addClass('filter-bar-in');
-                scope.focusInput();
                 scope.showBackdrop();
                 (done || angular.noop)();
               }, 20, false);
