@@ -18,8 +18,8 @@ angular.module('ionic_filter_bar', ['ionic']);
                 '<button class="filter-bar-cancel button button-icon icon {{::config.back}}"></button>' +
                 '<label class="item-input-wrapper">' +
                   '<input type="search" class="filter-bar-search" ng-model="data.filterText" placeholder="{{\'actions.search\' | translate}}" />' +
-                  '<button class="filter-bar-clear button button-icon icon" ng-class="getClearButtonClass()"></button>' +
                 '</label>' +
+                '<button class="filter-bar-clear button button-icon icon" ng-class="getClearButtonClass()"></button>' +
               '</div>' +
             '</div>';
         } else {
